@@ -3,16 +3,34 @@
       <header>
         <h1>Start met jouw Gentse Fieste te plannen</h1>
     </header>
-
-      <ul>
-        {{#each gfevents}}
-          {{> event}}
-        {{/each}}
-      </ul>
+        <h2>kies een datum:</h2>
+        <form class="date-form" action="">
+            <group class="inline-radio">
+            <div><input type="radio" class="date-radio" name="gf-date" id="gf-date13" value="13"><label for="gf-date13">13</label></div>
+            <div><input type="radio" class="date-radio" name="gf-date" id="gf-date14" value="14"><label for="gf-date14">14</label></div>
+            <div><input type="radio" class="date-radio" name="gf-date" id="gf-date15" value="15"><label for="gf-date15">15</label></div>
+            <div><input type="radio" class="date-radio" name="gf-date" id="gf-date16" value="16"><label for="gf-date16">16</label></div>
+            <div><input type="radio" class="date-radio" name="gf-date" id="gf-date17" value="17"><label for="gf-date17">17</label></div>
+            <div><input type="radio" class="date-radio" name="gf-date" id="gf-date18" value="18"><label for="gf-date18">18</label></div>
+            <div><input type="radio" class="date-radio" name="gf-date" id="gf-date19" value="19"><label for="gf-date19">19</label></div>
+            <div><input type="radio" class="date-radio" name="gf-date" id="gf-date20" value="20"><label for="gf-date20">20</label></div>
+            <div><input type="radio" class="date-radio" name="gf-date" id="gf-date21" value="21"><label for="gf-date21">21</label></div>
+            <div><input type="radio" class="date-radio" name="gf-date" id="gf-date22" value="22"><label for="gf-date22">22</label></div>
+            </group>
+        </form>
+        <ul>
+            {{#each gfevents}}
+            {{> event}}
+            {{/each}}
+        </ul>
     </div>
   </body>
    
   <template name="event">
-    <li><a href={{@id}}>{{name.nl}}</a></li>
+    <li>
+        <img src={{image.url}} alt={{image.caption}}>
+
+        <a href={{@id}}>{{name.nl}}</a>
+    </li>
 
   </template>
