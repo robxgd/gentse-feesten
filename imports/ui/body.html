@@ -1,0 +1,18 @@
+<body>
+    <div class="container">
+      <header>
+        <h1>Start met jouw Gentse Fieste te plannen</h1>
+    </header>
+
+      <ul>
+        {{#each gfevents}}
+          {{> event}}
+        {{/each}}
+      </ul>
+    </div>
+  </body>
+   
+  <template name="event">
+    <li><a href={{@id}}>{{name.nl}}</a></li>
+
+  </template>
