@@ -32,3 +32,16 @@
     display: none !important;
 }
 
+#event-list>li a img{
+    height: 50px;
+    width: auto;
+}
+  
+#event-list>li div{
+    display: table;
+}
+
+#event-list>li div>span{
+    display: table-cell;
+    vertical-align: middle;
+}

@@ -3,11 +3,6 @@ body {
   font-family: sans-serif;
 }
 
-li>img{
-  height: 50px;
-  width: auto;
-}
-
-input[type="radio"]{
-  -webkit-appearance: radio;
+h1{
+  font-size: 3em;
 }
