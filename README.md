@@ -4,7 +4,9 @@ Test application to learn the ins and outs of meteorjs
 
 ## ToDo
 
-- [ ] pull data from gentse feesten api
-- [ ]  display data
+- [x] pull data from gentse feesten api
+- [x]  display data
 - [ ]  authentication
 - [ ]  make personal schedule
+- [ ] load more
+- [ ] reduce impact of images (save version on server? resizing/caching?)
